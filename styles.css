@@ -27,12 +27,13 @@ body {
 .case {
   width: 300px;
   padding: 10px;
+  background-color: rgb(55, 55, 55);
 }
 
 .display1 {
   text-align: end;
   font-size: 20px;
-  color: black;
+  color: white;
   padding: 0px 7px 0px 7px;
 }
 
@@ -40,7 +41,7 @@ body {
   text-align: end;
   font-size: 32px;
   font-weight: 500;
-  color: black;
+  color: white;
   padding: 5px 7px 0px 7px;
 }
 
@@ -55,13 +56,16 @@ body {
 .buttons > div {
   width: 50px;
   height: 50px;
-  border: solid 1px black;
+  border: solid 1px rgb(100, 100, 100);
   border-radius: 5px;
+  box-shadow: 0px 0px 8px black;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 28px;
+  color: white;
+  background-color: rgb(100, 100, 100);
   margin: 10px;
 }
 
