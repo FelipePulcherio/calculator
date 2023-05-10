@@ -19,6 +19,13 @@ body {
   align-items: center;
 }
 
+.case {
+  width: 350px;
+  /*height: 500px;*/
+  margin: 0;
+  padding: 150px 10px 10px 10px;
+}
+
 .footer {
   width: 1000px;
   font-size: 24px;
