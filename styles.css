@@ -26,6 +26,21 @@ body {
   padding: 150px 10px 10px 10px;
 }
 
+.display1 {
+  text-align: end;
+  font-size: 20px;
+  color: black;
+  padding: 0px 7px 0px 7px;
+}
+
+.display2 {
+  text-align: end;
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  padding: 5px 7px 0px 7px;
+}
+
 .footer {
   width: 1000px;
   font-size: 24px;
