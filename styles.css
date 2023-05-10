@@ -55,6 +55,12 @@ body {
   align-items: center;
 }
 
+.delete  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer {
   width: 1000px;
   font-size: 24px;
