@@ -1,3 +1,21 @@
 * {
   border: solid black 1px;
 }
+
+.footer {
+  width: 1000px;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer a, .footer img {
+  width: 28px;
+  height: 28px;
+  margin: 0px;
+  padding: 0px;
+}
