@@ -19,11 +19,14 @@ body {
   align-items: center;
 }
 
+.header {
+  width: 1000px;
+  margin-top: 50px;
+}
+
 .case {
   width: 350px;
-  /*height: 500px;*/
-  margin: 0;
-  padding: 150px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .display1 {
@@ -52,13 +55,19 @@ body {
 .buttons > div {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border: solid 1px black;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 28px;
   margin: 10px;
+}
+
+.buttons > .delete, .buttons > .equal {
+  width: 100px;
+  height: 50px;
 }
 
 .footer {
