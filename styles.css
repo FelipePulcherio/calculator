@@ -69,6 +69,14 @@ body {
   font-size: 28px;
 }
 
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
 .buttonLogic {
   display: flex;
   flex-direction: column;
