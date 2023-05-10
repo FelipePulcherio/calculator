@@ -63,6 +63,12 @@ body {
   align-items: center;
 }
 
+.delete > div {
+  width: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+
 .buttonLogic {
   display: flex;
   flex-direction: column;
