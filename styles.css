@@ -43,46 +43,22 @@ body {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.buttonNumbers {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
-.delete {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.delete > div {
+.buttons > div {
   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 28px;
-}
-
-.numbers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-}
-
-.buttonLogic {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
+  margin: 10px;
 }
 
 .footer {
