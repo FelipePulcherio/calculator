@@ -39,6 +39,10 @@ function deletePressed() {
 function logicPressed() {
   const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
+  if (secondSlot != "") {
+    equalPressed(this.textContent);
+    return;
+  }
   secondSlot = this.textContent;
   display2.textContent = `${firstSlot + secondSlot}`
 }
