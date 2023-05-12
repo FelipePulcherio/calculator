@@ -28,3 +28,5 @@ numbers.forEach((number) => number.addEventListener('click', numberPressed));
 const delButton = document.querySelectorAll('.delete');
 delButton.forEach((del) => del.addEventListener('click', deletePressed));
 
+const logic = document.querySelectorAll('.logic');
+logic.forEach((logicBtn) => logicBtn.addEventListener('click', logicPressed));
