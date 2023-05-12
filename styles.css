@@ -99,3 +99,24 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+.logic:hover {
+  color: #3A4F50;
+  background-color: #F6F20E;
+  border: solid 1px #F6F20E;
+  box-shadow: 0px 0px 8px #F6F20E;
+}
+
+.delete:hover, .equal:hover {
+  color: #3A4F50;
+  background-color: #0EF621;
+  border: solid 1px #0EF621;
+  box-shadow: 0px 0px 8px #0EF621;
+}
+
+.number:hover {
+  color: #3A4F50;
+  background-color: #0EF6CC;
+  border: solid 1px #0EF6CC;
+  box-shadow: 0px 0px 8px #0EF6CC;
+}
