@@ -20,8 +20,19 @@ function numberPressed() {
 
 function deletePressed() {
   const display2 = document.querySelector('.display2');
-  this.textContent === "C" ? (firstSlot = firstSlot.slice(0,-1)) : (firstSlot = 0);
-  display2.textContent = firstSlot;
+  if (this.textContent === "C" && thirdSlot != "") {
+    thirdSlot = thirdSlot.slice(0,-1);
+    display2.textContent = firstSlot + secondSlot + thirdSlot;
+  } else if (this.textContent === "C" && secondSlot != "") {
+    secondSlot = "";
+    display2.textContent = firstSlot;
+  } else if (this.textContent === "C" && secondSlot === "") {
+    firstSlot = firstSlot.slice(0,-1);
+    display2.textContent = firstSlot;
+  } else if (this.textContent === "AC") {
+    firstSlot = secondSlot = thirdSlot = "0";
+    display2.textContent = firstSlot;
+  }
   return;
 }
 
