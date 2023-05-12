@@ -22,6 +22,13 @@ function deletePressed() {
   return;
 }
 
+function logicPressed() {
+  const display1 = document.querySelector('.display1');
+  const display2 = document.querySelector('.display2');
+  secondSlot = this.textContent;
+  display2.textContent = `${firstSlot + secondSlot}`
+}
+
 const numbers = document.querySelectorAll('.number');
 numbers.forEach((number) => number.addEventListener('click', numberPressed));
 
