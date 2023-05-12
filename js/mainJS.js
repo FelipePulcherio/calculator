@@ -16,5 +16,8 @@ function numberPressed() {
 }
 
 const numbers = document.querySelectorAll('.number');
-numbers.forEach( (number) => number.addEventListener('click', numberPressed) );
+numbers.forEach((number) => number.addEventListener('click', numberPressed));
+
+const delButton = document.querySelectorAll('.delete');
+delButton.forEach((del) => del.addEventListener('click', deletePressed));
 
