@@ -15,6 +15,13 @@ function numberPressed() {
   }
 }
 
+function deletePressed() {
+  const display2 = document.querySelector('.display2');
+  this.textContent === "C" ? (firstSlot = firstSlot.slice(0,-1)) : (firstSlot = 0);
+  display2.textContent = firstSlot;
+  return;
+}
+
 const numbers = document.querySelectorAll('.number');
 numbers.forEach((number) => number.addEventListener('click', numberPressed));
 
