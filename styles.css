@@ -1,6 +1,6 @@
-* {
+/** {
   border: solid black 1px;
-}
+}*/
 
 html {
   width: 100%;
@@ -29,6 +29,10 @@ body {
   padding: 10px;
   background-color: #1B2223;
   border-radius: 5px;
+}
+
+.display0 {
+  padding: 10px 15px 10px 15px;
 }
 
 .display1 {
