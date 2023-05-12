@@ -28,6 +28,7 @@ body {
   width: 300px;
   padding: 10px;
   background-color: #1B2223;
+  border-radius: 5px;
 }
 
 .display1 {
@@ -36,6 +37,7 @@ body {
   font-weight: 500;
   color: #3A4F50;
   background-color: #F4FEFD;
+  border-radius: 5px 5px 0px 0px;
   padding: 5px 7px 0px 7px;
 }
 
@@ -45,6 +47,7 @@ body {
   font-weight: 500;
   color: #3A4F50;
   background-color: #F4FEFD;
+  border-radius: 0px 0px 5px 5px;
   padding: 5px 7px 5px 7px;
 }
 
