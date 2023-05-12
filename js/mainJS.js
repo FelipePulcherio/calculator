@@ -6,7 +6,7 @@ function numberPressed() {
   const display2 = document.querySelector('.display2');
   if (display2.textContent.length >= 16) return;
   if (/[.]/g.test(firstSlot) && this.textContent == ".") return;
-  if (display2.textContent == 0) {
+  if (firstSlot === 0 && this.textContent != ".") {
     firstSlot = this.textContent;
     display2.textContent = firstSlot;
   } else {
