@@ -47,6 +47,10 @@ function logicPressed() {
   display2.textContent = `${firstSlot + secondSlot}`
 }
 
+function equalPressed(a) {
+  
+}
+
 const numbers = document.querySelectorAll('.number');
 numbers.forEach((number) => number.addEventListener('click', numberPressed));
 
