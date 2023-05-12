@@ -1,16 +1,19 @@
-let firstSlot = 0;
-let secondSlot = 0;
-let thirdSlot = 0;
+let firstSlot = "0";
+let secondSlot = "";
+let thirdSlot = "";
 
 function numberPressed() {
   const display2 = document.querySelector('.display2');
   if (display2.textContent.length >= 16) return;
   if (/[.]/g.test(firstSlot) && this.textContent == ".") return;
-  if (firstSlot === 0 && this.textContent != ".") {
+  if (firstSlot === "0" && this.textContent != ".") {
     firstSlot = this.textContent;
     display2.textContent = firstSlot;
+  } else if (secondSlot != 0) {
+    thirdSlot = thirdSlot + this.textContent;
+    display2.textContent = firstSlot + secondSlot + thirdSlot;
   } else {
-    firstSlot = `${firstSlot + this.textContent}`;
+    firstSlot = firstSlot + this.textContent;
     display2.textContent = firstSlot;
   }
 }
