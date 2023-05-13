@@ -89,6 +89,8 @@ function equalPressed(a) {
       result = multiply(Number(firstSlot), Number(thirdSlot));
       break;
   }
+
+  result = toFixedIfNecessary(result, 5);
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
   display2.textContent = `${result}`;
   firstSlot = result;
