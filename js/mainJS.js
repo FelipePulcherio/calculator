@@ -5,7 +5,13 @@ let thirdSlot = "";
 function numberPressed() {
   const display2 = document.querySelector('.display2');
   if (display2.textContent.length >= 16) return;
-  if (/[.]/g.test(firstSlot) && this.textContent == ".") return;
+
+  if (secondSlot !== "") {
+    if (/[.]/g.test(thirdSlot) && this.textContent == ".") return;
+  } else {
+    if (/[.]/g.test(firstSlot) && this.textContent == ".") return;
+  }
+
   if (firstSlot === "0" && this.textContent != ".") {
     firstSlot = this.textContent;
     display2.textContent = firstSlot;
