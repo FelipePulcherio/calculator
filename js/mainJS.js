@@ -53,7 +53,11 @@ function add() {
 
 function subtract() {
 	return arguments.length === 0 ? 0 : [...arguments].reduce((a, b) => a - b);
-};
+}
+
+function multiply() {
+  return [...arguments].reduce((a, b) => a * b, 1);
+}
 
 function equalPressed(a) {
   const display1 = document.querySelector('.display1');
