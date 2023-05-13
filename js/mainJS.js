@@ -60,3 +60,6 @@ delButton.forEach((del) => del.addEventListener('click', deletePressed));
 
 const logic = document.querySelectorAll('.logic');
 logic.forEach((logicBtn) => logicBtn.addEventListener('click', logicPressed));
+
+const equal = document.querySelector('.equal');
+equal.addEventListener('click', equalPressed);
