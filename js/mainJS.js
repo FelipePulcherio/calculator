@@ -38,7 +38,6 @@ function deletePressed() {
 }
 
 function logicPressed() {
-  const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
   if (secondSlot != "") {
     equalPressed(this.textContent);
@@ -49,7 +48,26 @@ function logicPressed() {
 }
 
 function equalPressed(a) {
-  
+  const display1 = document.querySelector('.display1');
+  const display2 = document.querySelector('.display2');
+  let symbol = "";
+  let result = "";
+
+  typeof(a) !== 'object' ? (symbol = a) : (symbol = secondSlot);
+
+  switch (symbol) {
+    case "+":
+      result = add(firstSlot, thirdSlot);
+    case "-":
+      result = subtract(firstSlot, thirdSlot);
+    case "÷":
+      result = divide(firstSlot, thirdSlot);
+    case "×":
+      result = multiply(firstSlot, thirdSlot);
+  }
+
+  display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
+  display2.textContent = `${result}`;
 }
 
 const numbers = document.querySelectorAll('.number');
