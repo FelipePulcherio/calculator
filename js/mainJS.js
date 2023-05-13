@@ -47,6 +47,10 @@ function logicPressed() {
   display2.textContent = `${firstSlot + secondSlot}`
 }
 
+function add() {
+  return [...arguments].reduce((a, b) => a + b, 0);
+}
+
 function equalPressed(a) {
   const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
@@ -54,16 +58,20 @@ function equalPressed(a) {
   let result = "";
 
   typeof(a) !== 'object' ? (symbol = a) : (symbol = secondSlot);
-
-  switch (symbol) {
-    case "+":
+  console.log(symbol);
+  switch (true) {
+    case symbol === "+":
       result = add(firstSlot, thirdSlot);
-    case "-":
+      break;
+    case symbol === "-":
       result = subtract(firstSlot, thirdSlot);
-    case "÷":
+      break;
+    case symbol === "÷":
       result = divide(firstSlot, thirdSlot);
-    case "×":
+      break;
+    case symbol === "×":
       result = multiply(firstSlot, thirdSlot);
+      break;
   }
 
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
