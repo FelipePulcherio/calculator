@@ -51,6 +51,10 @@ function add() {
   return [...arguments].reduce((a, b) => a + b, 0);
 }
 
+function subtract() {
+	return arguments.length === 0 ? 0 : [...arguments].reduce((a, b) => a - b);
+};
+
 function equalPressed(a) {
   const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
@@ -74,10 +78,10 @@ function equalPressed(a) {
       break;
   }
 
-  firstSlot = result;
-  secondSlot = thirdSlot = "";
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
   display2.textContent = `${result}`;
+  firstSlot = result;
+  secondSlot = thirdSlot = "";
 }
 
 const numbers = document.querySelectorAll('.number');
