@@ -55,8 +55,16 @@ function subtract() {
 	return arguments.length === 0 ? 0 : [...arguments].reduce((a, b) => a - b);
 }
 
+function divide() {
+  return [...arguments].reduce((a, b) => a / b);
+}
+
 function multiply() {
   return [...arguments].reduce((a, b) => a * b, 1);
+}
+
+function toFixedIfNecessary( value, dp ){
+  return +parseFloat(value).toFixed( dp );
 }
 
 function equalPressed(a) {
@@ -81,7 +89,6 @@ function equalPressed(a) {
       result = multiply(Number(firstSlot), Number(thirdSlot));
       break;
   }
-
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
   display2.textContent = `${result}`;
   firstSlot = result;
