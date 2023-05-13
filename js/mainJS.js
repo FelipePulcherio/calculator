@@ -61,19 +61,21 @@ function equalPressed(a) {
   console.log(symbol);
   switch (true) {
     case symbol === "+":
-      result = add(firstSlot, thirdSlot);
+      result = add(Number(firstSlot), Number(thirdSlot));
       break;
     case symbol === "-":
-      result = subtract(firstSlot, thirdSlot);
+      result = subtract(Number(firstSlot), Number(thirdSlot));
       break;
     case symbol === "÷":
-      result = divide(firstSlot, thirdSlot);
+      result = divide(Number(firstSlot), Number(thirdSlot));
       break;
     case symbol === "×":
-      result = multiply(firstSlot, thirdSlot);
+      result = multiply(Number(firstSlot), Number(thirdSlot));
       break;
   }
 
+  firstSlot = result;
+  secondSlot = thirdSlot = "";
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
   display2.textContent = `${result}`;
 }
