@@ -69,10 +69,6 @@ function multiply() {
   return [...arguments].reduce((a, b) => a * b, 1);
 }
 
-function toFixedIfNecessary( value, dp ){
-  return +parseFloat(value).toFixed( dp );
-}
-
 function equalPressed(a) {
   const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
@@ -96,7 +92,7 @@ function equalPressed(a) {
       break;
   }
 
-  result = toFixedIfNecessary(result, 5);
+  result = result.toString().slice(0, 7);
   display1.textContent = `${firstSlot + secondSlot + thirdSlot + "="}`;
   display2.textContent = `${result}`;
   firstSlot = result;
