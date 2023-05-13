@@ -30,7 +30,8 @@ function deletePressed() {
     firstSlot = firstSlot.slice(0,-1);
     display2.textContent = firstSlot;
   } else if (this.textContent === "AC") {
-    firstSlot = secondSlot = thirdSlot = "0";
+    firstSlot = "0";
+    secondSlot = thirdSlot = "";
     display2.textContent = firstSlot;
   }
   return;
