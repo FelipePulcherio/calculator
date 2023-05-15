@@ -25,7 +25,14 @@ function numberPressed() {
 }
 
 function deletePressed() {
+  const display1 = document.querySelector('.display1');
   const display2 = document.querySelector('.display2');
+
+  if (display2.textContent.length == 1) {
+    firstSlot = "0";
+    return display2.textContent = firstSlot;
+  }
+
   if (this.textContent === "C" && thirdSlot != "") {
     thirdSlot = thirdSlot.slice(0,-1);
     display2.textContent = firstSlot + secondSlot + thirdSlot;
@@ -39,6 +46,7 @@ function deletePressed() {
     firstSlot = "0";
     secondSlot = thirdSlot = "";
     display2.textContent = firstSlot;
+    display1.textContent = "";
   }
   return;
 }
