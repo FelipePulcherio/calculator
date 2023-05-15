@@ -82,8 +82,9 @@ function equalPressed(a) {
   let symbol = "";
   let result = "";
 
+  if (secondSlot == "") return;
+
   typeof(a) !== 'object' ? (symbol = a) : (symbol = secondSlot);
-  console.log(symbol);
   switch (true) {
     case symbol === "+":
       result = add(Number(firstSlot), Number(thirdSlot));
