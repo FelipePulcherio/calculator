@@ -94,6 +94,7 @@ function equalPressed(a) {
       break;
     case symbol === "÷":
       result = divide(Number(firstSlot), Number(thirdSlot));
+      if (thirdSlot == "0") {result=""; window.alert("Can't divide by 0!")};
       break;
     case symbol === "×":
       result = multiply(Number(firstSlot), Number(thirdSlot));
